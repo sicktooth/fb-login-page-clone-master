@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <title>Facebook - Log In or Sign Up</title>
 </head>
 
@@ -47,7 +48,7 @@
           <div class="createh1"><span>Create an account</span></div>
           <div class="createp">It's free and always will be.</div>
         </div>
-        <div class="signupform">
+        <form class="signupform">
           <div class="inputname">
             <input type="text" name="firstname" placeholder="First name" class="namebox namebox1 signuptextbox" required>
             <input type="text" name="surname" placeholder="Surname" class="namebox namebox2 signuptextbox" required>
@@ -117,7 +118,7 @@
           <div id="createpage">
             <a href="#">Create a Page</a> for a celebrity, band or business.
           </div>
-        </div>
+        </form>
       </div>
     </div>
   </div>
@@ -193,11 +194,14 @@
   </div>
   <div class="mobmaindiv">
 
-      <div id="mobtextdiv">
-        <input type="text" class="mobtextbox mobtextbox1" placeholder="Mobile number or email address">
-        <input type="password" class="mobtextbox mobtextbox2" placeholder="Password">
-      </div>
-      <input type="submit" class="mobloginbutton" value="Log In">
+      <form>
+        <div id="mobtextdiv">
+         <input type="text" class="mobtextbox mobtextbox1" placeholder="Mobile number or email address">
+          <input type="password" class="mobtextbox mobtextbox2" placeholder="Password">
+        </div>
+        <input type="submit" class="mobloginbutton" value="Log In">
+      </form>
+      
       <div id="ordiv">
       <span id="or">or</span>
       </div>
@@ -233,3 +237,4 @@
     </div>
 </div>
 </body>
+<script src="index.js"></script>
